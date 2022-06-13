@@ -1,0 +1,296 @@
+:root{
+    --main-black: #191919;
+    --white: #f8f8f8;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: var(--main-black);
+}
+
+header{
+    background-color: var(--main-black);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 38px 120px 40px 120px;
+}
+
+header h1, header nav{
+    flex: 1;
+}
+
+header nav{
+    text-align: right;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: Bold;
+    flex: 1 0 0;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+}
+
+header nav{
+    flex: 1 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a{
+    margin: 0 0 0 80px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header{
+    border-bottom: solid 1px #f8f8f8;
+}
+
+
+.in{
+    margin-top: 180px;
+    margin-left: 220px;
+    color: var(--white);
+}
+
+.mark{
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 500px;
+    border: 1px solid #f8f8f8;
+    padding: 4px 12px;
+    margin-bottom: 32px;
+}
+
+.in h3{
+    font-size: 72px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: -2px;
+    margin-bottom: 72px;
+}
+
+.in-con{
+    float: left;
+    margin-right: 100px;
+    margin-top: 48px;
+
+}
+
+.in-text{
+    width: 360px;
+}
+
+.in-con h4{
+    font-size: 54px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.in-con p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+
+.in-info{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main{
+    margin-top: 480px;
+}
+
+
+
+
+section.con1{
+    clear:both;
+    display: flex;
+    margin: 240px 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+section.con1 div.image img{
+    width: 100%;
+    flex: 0 0 400px;
+    
+}
+
+section.con1 div.info{
+    flex: 0 0 400px;
+    margin-right: 2%;
+    color: var(--white);
+    margin-left: 120px;
+
+    
+    
+}
+
+
+
+
+section.con2{
+    display: flex;
+    margin: 240px 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+section.con2 div.image img{
+    width: 100%;
+    flex: 0 0 400px;
+    
+}
+
+section.con2 div.info{
+    flex: 0 0 400px;
+    margin-left: 2%;
+    color: var(--white);
+    margin-right: 120px;
+    
+}
+
+.info h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.out{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+
+.logo{
+    margin-bottom: 40px;
+}
+
+.out h6{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+.noise{
+    position: fixed;
+    z-index: 999;
+    top: -300%;
+    left: -150%;
+    height: 600%;
+    width: 600%;
+    animation: grain 7s steps(10) infinite;
+    background-image: url(https://itssharl.ee/noise.png);
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: 0.14;
+    pointer-events: none;
+}
+
+@keyframes grain{
+    0%, 100%{
+        transform: translate(0);
+    }
+
+    10%{
+        transform: translate(-5%, -10%);
+    }
+
+    20%{
+        transform: translate(-15%, 5%);
+    }
+
+    30%{
+        transform: translate(-7%, -25%);
+    }
+
+    40%{
+        transform: translate(-5%, -25%);
+    }
+
+    50%{
+        transform: translate(-15%, 10%);
+    }
+
+    60%{
+        transform: translate(15%);
+    }
+
+    70%{
+        transform: translate(15%);
+    }
+
+    80%{
+        transform: translate(3%, 35%);
+    }
+
+    90%{
+        transform: translate(-10%, 10%);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    z-index: 10;
+    background-color: var(--main-black);
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    border-top: solid 1px #f8f8f8;
+    align-items: center;
+}
+
+.footer p{
+    
+    color: var(--white);
+}

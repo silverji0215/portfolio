@@ -1,0 +1,197 @@
+:root{
+    --main-black: #191919;
+    --white: #f8f8f8;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: var(--main-black);
+}
+
+header{
+    background-color: var(--main-black);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    padding: 38px 120px 40px 120px;
+
+    
+}
+
+header h1, header nav{
+    flex: 1;
+}
+
+header nav{
+    text-align: right;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: Bold;
+    flex: 1 0 0;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+}
+
+header nav{
+    flex: 1 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a{
+    margin: 0 0 0 80px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header{
+    border-bottom: solid 1px #f8f8f8;
+}
+
+.main{
+    margin-top: 100px;
+}
+
+.text{
+    font-size: 96px;
+    font-weight: 300;
+    position: relative;
+    z-index: 5;
+    background-color: rgba( 255, 255, 255, 0 );
+    margin-left: 200px;
+    color: var(--white);
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 280px;
+    margin-right: 200px;
+    
+    
+   
+
+}
+
+.cta{
+    position: relative;
+    z-index: 5;
+    border: 1px solid #f8f8f8;
+    border-radius: 500px;
+    color: var(--white);
+    width: 180px;
+    height: 48px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align : center;
+    padding: 8px 0;
+    
+}
+
+.cta a{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.noise{
+    position: fixed;
+    z-index: 999;
+    top: -300%;
+    left: -150%;
+    height: 600%;
+    width: 600%;
+    animation: grain 7s steps(10) infinite;
+    background-image: url(https://itssharl.ee/noise.png);
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.footer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    z-index: 10;
+    background-color: var(--main-black);
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    border-top: solid 1px #f8f8f8;
+    align-items: center;
+}
+
+.footer p{
+    
+    color: var(--white);
+}
+
+
+@keyframes grain{
+    0%, 100%{
+        transform: translate(0);
+    }
+
+    10%{
+        transform: translate(-5%, -10%);
+    }
+
+    20%{
+        transform: translate(-15%, 5%);
+    }
+
+    30%{
+        transform: translate(-7%, -25%);
+    }
+
+    40%{
+        transform: translate(-5%, -25%);
+    }
+
+    50%{
+        transform: translate(-15%, 10%);
+    }
+
+    60%{
+        transform: translate(15%);
+    }
+
+    70%{
+        transform: translate(15%);
+    }
+
+    80%{
+        transform: translate(3%, 35%);
+    }
+
+    90%{
+        transform: translate(-10%, 10%);
+    }
+}
+
+a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
+}
